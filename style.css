@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+head{
+    position: absolute;
+}
+
+body{
+   font-family: 'Stint Ultra Condensed', cursive;
+   background-image: url('https://i0.wp.com/www.marcelopedra.com.ar/blog/wp-content/uploads/2013/10/animated-gifs-of-fighting-game-backgrounds-25.gif?resize=800%2C336&ssl=1');
+   background-color: #FFE4C4;
+   background-attachment: fixed;
+ 
+   background-size: cover;
+}
+
+.titulo{
+    color: lightpink;
+    width: 350px;
+    height: 50px;
+    border-radius: 0.5em;
+}
+.subtitulo{
+ color: white;
+}
+/*label{
+    color: blueviolet;
+    background: antiquewhite;
+    width: 310px;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+}*/
+
+input{
+    display: none;
+    
+
+}
+input:checked + label{
+    background-color: rgba(136,188,209,.8)
+
+}
+
+.selection{
+    /*color: white;
+    background: transparent;
+    border: 2px solid white;
+    width: 310px;
+    height: 50px;*/
+    border-radius: 14px;
+    border: 1px solid #3498db;
+    height: 50px;
+    width: 200px;
+    color: #3498db;
+    font-size: 1.5em;
+    box-shadow: 0 6px 6px rgba(41, 71, 57, 0.6);
+
+    
+}
+#selecPet{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.tarjeta-de-monkepo{
+    width: 265px;
+    height: 203px;
+    background: #C7F5F5;
+    padding: 7px;
+    box-sizing: border-box;
+    margin: 52px;
+    border-radius: 23px;
+    display: flex;
+    color: white;
+    align-items: center;
+    
+}
+.tarjeta-de-monkepo img{
+    position: relative;
+    left: 25px;
+    height: 100px;
+    width: 133px;
+  
+}
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+#selecAttack{
+    flex-direction: column;
+    align-items: center;
+}
+.botonAtaque{
+    border: 2px solid #0E185F;
+    background-color: #42C2FF;
+    width: 154px;
+    height: 79px;
+    border-radius: 44px;
+    margin: 10px;
+    align-items: center;
+    font-size: 46px;
+}
+#mensaje{
+    background: #386CBB;
+    width: 280px;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#ButtonRestart{
+   /* border: transparent;
+    color: #0E185F;
+    background-color: white;*/
+    border: 1px solid #3498db;
+    height: 50px;
+    width: 200px;
+    color: #3498db;
+    font-size: 1.5em;
+    box-shadow: 0 6px 6px rgb(0 0 0 / 60%);
+}
+p {
+    color: white;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    
+}
+#lifePlayer,#lifeEnemy{
+    font-size: 32px;
+    margin-bottom: 0px;
+    color: #120101;
+    background-color: white;
+    width: 62px;
+    height: 50px;
+    border-radius: 22px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.tarjetas-ataques{
+    display: flex;
+    gap: 10px;
+}
+.ataque-jugador,.ataque-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#vermapa{
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+}
+#mapa{
+    border: 2px solid white;
+}
+@media(max-width: 1040px){
+    .tarjetas,.tarjetas-ataques{
+        flex-direction: column;
+    }
+    .botonAtaque{
+      display: flex;
+      justify-content: center;
+    }
+
+}

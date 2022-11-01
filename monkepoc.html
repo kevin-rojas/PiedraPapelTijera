@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONKEPOC</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+    <section id="selecPet">
+        <h1 class="titulo">welcom monkepoc 🔥 💧 🌱</h1>
+        <h2 class="subtitulo">Elige tu mascota</h2>
+        <div id="contenedorTarjetas" class="tarjetas"></div>
+        <button  id="Buttonselect" class="selection">Seleccionar</button>
+
+    </section>
+
+    <section id="vermapa">
+        <h1 class="titulo">Recorre el mapa con tu Mokepoc</h1>
+        <canvas id="mapa"></canvas>
+        <button onmouseup="deternerMovimiento()" onmousedown="Arriba()">Arriba</button>
+        <button onmouseup="deternerMovimiento()" onmousedown="Izquierda()">Izquierda</button>
+        <button onmouseup="deternerMovimiento()" onmousedown="Abajo()">Abajo</button>
+        <button onmouseup="deternerMovimiento()" onmousedown="Derecha()">Derecha</button>
+    </section>
+
+    <section id="selecAttack">
+        <h1 class="titulo">welcom monkepoc 🔥 💧 🌱</h1>
+        <h2 class="subtitulo">Elige tu ataque</h2>
+        <div id="contenedorAtaques" class="tarjetas-ataques">
+        </div>
+
+        
+        <div>
+            <div id="mensaje">
+              <p id="resultado"> Mucha suerte </p>
+              <div id="reiniciar">
+                <button id="ButtonRestart">Reiniciar</button>
+              </div>
+            </div> 
+            
+        </div> 
+        <div class="ataques">
+            <div class="ataque-jugador" >
+                <p id="lifePlayer">0</p>
+                <p id="namePetPlayer"></p>
+                <div id="ataque-jugador"></div>
+            </div>
+            <div class="ataque-enemigo">
+                <p id="lifeEnemy">0</p>
+                <p id="namePetEnemy"></p>
+                <div id="ataque-enemigo"></div>
+            </div>
+        </div>
+    </section>  
+    <script src="monkepoclogic.js"></script>
+</body>
+</html>
